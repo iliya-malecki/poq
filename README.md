@@ -3,7 +3,7 @@
 #### and it is written in python, hence the 'p'
 
 
-Here's an example of a program in poq. Im defining what it means to square a sum, and then applying this notion to 
+Here's an example of a program in poq. Im defining what it means to square a sum, and then applying this notion to a mathematical expression
 ```
 sqos = shape {
     (a + b)^2 
@@ -52,7 +52,7 @@ shape {
         expand
 }
 ```
-`((f(x) + y)^2 + y)^2 = (((f(x) + y)^2)^2) + 2*(y*((f(x) + y)^2)) + (y^2)`
+`>>> ((f(x) + y)^2 + y)^2 = (((f(x) + y)^2)^2) + 2*(y*((f(x) + y)^2)) + (y^2)`
 ## How it works
 1. There are Rules, acting on mathematical expressions. They match their first half and replace it with the second. Halves are seperated with a '=>'. The rule itself is enclosed in '{}'
 2. You can assign a Rule to a variable with a '='
